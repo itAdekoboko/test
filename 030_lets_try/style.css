@@ -1,0 +1,56 @@
+.btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+  padding: 25px 50px;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.btn.float:hover {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 #726969;
+          box-shadow: 5px 5px 10px 0 #726969;
+}
+
+.btn.filled {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px 0 #4d4848;
+          box-shadow: 5px 5px 10px 0 #4d4848;
+}
+
+.btn.filled:hover {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.letter-spacing:hover {
+  background-color: black;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.btn.shadow:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  -webkit-box-shadow: 5px 5px 0 0 #0a0a0a;
+          box-shadow: 5px 5px 0 0 #0a0a0a;
+}
+
+.btn.solid:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */

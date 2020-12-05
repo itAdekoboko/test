@@ -1,0 +1,48 @@
+$cWhite:white;
+$cBlack:black;
+.btn{
+    background-color: $cWhite;
+    color: $cBlack;
+    border: 2px solid $cBlack;
+    font-weight: 600;
+    padding: 25px 50px;
+    cursor: pointer;
+    transition: all 2s;
+
+    &.float:hover{
+            background-color: $cBlack;
+            color:$cWhite;
+            box-shadow: 5px 5px 10px 0 rgb(114, 105, 105);
+    }
+
+    &.filled{
+        background-color: $cBlack;
+        color:$cWhite;
+        box-shadow: 5px 5px 10px 0 rgb(77, 72, 72);
+        &:hover{
+            background-color: $cWhite;
+            color: $cBlack;
+            box-shadow: none;
+        }
+    }
+    &.letter-spacing:hover{
+        background-color: $cBlack;
+        letter-spacing: 3px;
+        color: $cWhite;
+
+    }
+    &.shadow:hover{
+            background-color: $cBlack;
+            color: $cWhite;
+            transform: translate(-2.5px,-2.5px);//x,y軸方向に移動する
+            box-shadow: 5px 5px 0 0 rgb(10, 10, 10);
+        
+    }
+    &.solid:hover{
+        background-color: $cBlack;
+        color: $cWhite;
+        transform: translate(2px,2px);//x,y軸方向に移動する
+        box-shadow: none;
+            
+    }
+}
