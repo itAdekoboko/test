@@ -1,0 +1,16 @@
+.div-1{
+    background-color: orange;
+    top: 10px;
+    left: 10px;
+}
+.div{
+    font-weight: 600;
+    padding: 0.5px;
+    font-size: 20px;
+
+}
+
+//z-indexを使用するためには、possitionがstatic以外の時だけ
+//z-indexは親要素の大きさで表示される順番が変わってくる
+//containarにindexが設定されいると親が関係なくindexの大きさ順になる
+//abusorutoはontainerの中の最大領域の高さで表示される

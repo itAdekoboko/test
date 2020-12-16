@@ -1,0 +1,50 @@
+$cWhite: white;
+$cBlack: black;
+#container{
+    text-align: center;
+}
+.btn{
+    background-color: $cWhite;
+    color: $cBlack;
+    border: 10x solid $cBlack;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1;
+
+    &.cover-3d{
+        position: relative;//親要素という認識をさせる;
+        overflow: hidden;//枠外の表示無効化
+        z-index: 1;
+        //３d表示の最低限の２つ
+        transform-style: preserve-3d;//子要素を３dで表示可能
+        perspective: 300px;//奥行き
+        &::before {
+            content: '';
+            display:inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: $cBlack;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(-90deg);
+            transition: all 0.3s;//値が変わる者が適応される
+            transform-origin: top center;
+            opacity: 0;
+            z-index: -1;
+
+        }
+        &:hover {//ボタンがhoverされた時のspan
+            color: $cWhite;
+            &::before{
+                transform: none;
+                opacity: 1;
+
+            }
+        }
+
+    }
+}

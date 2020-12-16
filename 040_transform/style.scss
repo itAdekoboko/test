@@ -1,0 +1,12 @@
+.rect{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: orangered;
+    //transform: translate(50px,50px);
+    //transform: rotate(30deg);//右回りがプラス
+    //transform: skew(-30deg);//平行四辺形
+   //transform: scale(1.5);//拡大
+   //transform: //複数使いたい時、個半角スペースを入れる事で使う事が可能;
+    transform-origin: center center;
+}
